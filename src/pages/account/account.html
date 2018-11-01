@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Account</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-tabs #myTabs>
+      <ion-tab tabIcon="person" tabTitle="User Details" [root]="tab1"></ion-tab>
+      <!--<ion-tab tabIcon="person" tabTitle="Logout" [root]="tab3"></ion-tab>-->
+  </ion-tabs>

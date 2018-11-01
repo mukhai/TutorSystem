@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-tabs #myTabs>
+    <ion-tab tabIcon="map" tabTitle="Location" [root]="tab1"></ion-tab>
+    <ion-tab tabIcon="person" tabTitle="List Of Tutor" [root]="tab2"></ion-tab>
+    <ion-tab tabIcon="person" tabTitle="Event" [root]="tab3"></ion-tab>
+</ion-tabs>

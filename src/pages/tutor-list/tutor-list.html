@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>TutorList</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="content">
+  <ion-card *ngFor="let p of profiles" (press)="goToUserInfo()">
+    <div style="display:inline-block;vertical-align:top;">
+      <ion-img style="width: 100px; height: 100px;" src="assets/imgs/Sonic.png"></ion-img>
+    </div>
+    <div style="display:inline-block;">
+      <ion-card-content>
+        <ion-item>
+          Username: {{p.username}} <br>
+          Name: {{p.firstname}} {{p.lastname}} <br>
+          Email: {{p.email}}
+        </ion-item>
+      </ion-card-content>
+    </div>
+  </ion-card>
+</ion-content>

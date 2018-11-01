@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Userdetails</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p> Username: {{(profileData | async)?.username}}</p>
+  <p> First Name: {{(profileData | async)?.firstname}}</p>
+  <p> Last Name: {{(profileData | async)?.lastname}}</p>
+  <p> Email: {{(profileData | async)?.email}}</p>
+  <p> Phone Number: {{(profileData | async)?.phoneNum}}</p>
+  <p> Address: {{(profileData | async)?.address}}</p>
+  <p> School Name: {{(profileData | async)?.schoolName}}</p>
+
+  <button ion-button block (click)="updateProfile()">Update Profile</button>
+  <button ion-button block (click)="logoutApp()">Logout</button>
+</ion-content>

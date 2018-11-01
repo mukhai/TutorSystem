@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profile Update</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      <ion-avatar item-center>
+        <img [src]="base64Image" *ngIf="base64Image" />
+      </ion-avatar>
+  </ion-list>
+  
+  <button ion-button (click)="takePicture()">Take Picture</button>
+  <button ion-button (click)="getPicture()">Picture from Library</button>
+  <button ion-button (click)="cropPicture()">Crop Picture</button>
+
+  <ion-item>
+    <ion-label>Username</ion-label>
+    <ion-input type="text" value="{{(profileData | async)?.username}}" [(ngModel)]="profile.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>First Name</ion-label>
+    <ion-input type="text" value="{{(profileData | async)?.firstname}}" [(ngModel)]="profile.firstname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Last Name</ion-label>
+    <ion-input type="text" value="{{(profileData | async)?.lastname}}" [(ngModel)]="profile.lastname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Email</ion-label>
+    <ion-input type="text" value="{{(profileData | async)?.email}}" [(ngModel)]="profile.email"></ion-input>
+  </ion-item>
+
+  <button ion-button clear block (click)="saveProfile()">Save Profile</button>
+  <button ion-button clear block (click)="cancelProfile()">Cancel</button>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>TutorListInfo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-avatar item-center>
+          <ion-img style="width: 100px; height: 100px;" src="assets/imgs/Sonic.png"></ion-img>
+        </ion-avatar>
+    </ion-list>
+  <p> Username: {{(profileData | async)?.username}}</p>
+  <p> First Name: {{(profileData | async)?.firstname}}</p>
+  <p> Last Name: {{(profileData | async)?.lastname}}</p>
+  <p> Email: {{(profileData | async)?.email}}</p>
+  <p> Phone Number: {{(profileData | async)?.phoneNum}}</p>
+  <p> Address: {{(profileData | async)?.address}}</p>
+  <p> School Name: {{(profileData | async)?.schoolName}}</p>
+ 
+</ion-content>

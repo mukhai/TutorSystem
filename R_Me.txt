@@ -1,0 +1,13 @@
+11.21 26.10.2018
+
+Ok:
+Tutor List
+
+
+
+Bug: 
+
+Error: Bila load update user info keluar errorExpression 
+
+
+next Progress: Maps

@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>test</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      Hello World, this is my camera app
+
+      <button ion-button (click)="takePicture()">Take a Picture</button>
+
+      Latest Picture:
+      <img [src]="base64Image" *ngIf="base64Image" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<!--
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>test</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+ <div><img src="assets/imgs/logo.png" alt="logo.png"></div> 
+
+ <div><ion-img width="100" height="100" [src]="picture"></ion-img></div>Jadi
+
+
+ <div><ion-img width="100" height="100" class="image_container" [src]="picture"></ion-img></div>
+ 
+
+ <div><ion-img src="{{picture}}"></ion-img></div>
+
+ <img><ion-img src="{{picture}}"></ion-img>
+
+ <img src="{{picture}}"/>
+
+ <img src="{{picture}}" alt="" class="image_container" />
+ 
+  <button ion-button full (click)="takePicture()">Take Picture</button>
+  <button ion-button full (click)="takePicture2()">Take Picture</button>
+
+</ion-content>-->
